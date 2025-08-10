@@ -6,7 +6,7 @@
 
 - A user-friendly, all-in-one USB setup tool for the Xbox 360 BadUpdate soft mod exploit  
 - Designed to format and prepare any FAT32-compatible USB stick specifically for the BadUpdate exploit  
-- Makes the complex process of preparing a USB drive for BadUpdate exploit simple
+- Makes the complex process of preparing a USB drive for the BadUpdate exploit simple
 - Completely open source
 
 ## Key Features
