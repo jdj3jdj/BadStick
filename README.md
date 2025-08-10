@@ -40,7 +40,8 @@
 - Requires no hardware modification or flashing — purely software based  
 - After reboot, the console returns to normal state, requiring the exploit to be launched again to regain homebrew functionality  
 - Popular for its reversibility and relatively low risk compared to hardware mods  
-- Enables users to run unsigned code, custom dashboards, and various homebrew applications  
+- Enables users to run unsigned code, custom dashboards, and various homebrew applications
+- The BadUpdate GitHub page: https://github.com/grimdoomer/Xbox360BadUpdate
 
 ## Why Use BadStick?
 
