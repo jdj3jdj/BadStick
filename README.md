@@ -48,4 +48,10 @@
 - Removes all guesswork and manual setup steps from the BadUpdate exploit USB creation process  
 - Supports users of all experience levels — from first-timers to advanced modders who want a reliable USB setup tool  
 - Saves time by bundling formatting, payload installation, and homebrew setup into one easy application  
-- Encourages community development and learning with its open source approach  
+- Encourages community development and learning with its open source approach
+
+  ## Other Information
+  BadStick was made to be a free and open source tool, not only to make it easier for people to get BadUpdate running on
+  their consoles, but also for people to learn. With that being said, nobody has my permission to reupload this or to
+  integrate this in other programs without my explicit permission. I am all for people learning off of me, but not people
+  stealing my work to re-release as theirs. Simply ask, and I will allow! :)
