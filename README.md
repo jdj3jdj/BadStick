@@ -12,8 +12,7 @@
 ## Key Features
 
 - **Automated USB Formatting:**  
-  - Automatically formats the USB stick to FAT32 with the correct partition and file system settings required by the Xbox 360  
-  - Includes progress updates and status messages to keep the user informed during the formatting process    
+  - Automatically formats the USB stick to FAT32 with the correct partition and file system settings required by the Xbox 360
 
 - **BadUpdate Payload Installation:**  
   - Installs the official free trial version of *Rock Band Blitz* — a key component needed to trigger the BadUpdate exploit  
@@ -24,7 +23,7 @@
   - Offers selection of additional homebrew applications included in the tool, so users can customize their USB stick setup  
 
 - **Open Source for Transparency and Learning:**  
-  - Full source code provided, encouraging users and developers to understand, modify, and improve the tool  
+  - Full source code provided, encouraging users and developers to understand and learn from the tool
 
 - **Safe & Reversible Soft Mod:**  
   - Utilizes the BadUpdate exploit, a soft mod method that does **not** permanently modify the Xbox 360 firmware or hardware  
