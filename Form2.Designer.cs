@@ -61,6 +61,7 @@
             this.PluginsToggle = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.RefDrivesBtn = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -92,7 +93,7 @@
             // StartBtn
             // 
             this.StartBtn.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StartBtn.Location = new System.Drawing.Point(494, 289);
+            this.StartBtn.Location = new System.Drawing.Point(494, 264);
             this.StartBtn.Name = "StartBtn";
             this.StartBtn.Size = new System.Drawing.Size(116, 24);
             this.StartBtn.TabIndex = 4;
@@ -126,7 +127,7 @@
             // 
             this.ShelbyLabel.Name = "ShelbyLabel";
             this.ShelbyLabel.Size = new System.Drawing.Size(199, 17);
-            this.ShelbyLabel.Text = "BadStick V1.0B Created By Shelby <3";
+            this.ShelbyLabel.Text = "BadStick V1.2B Created By Shelby <3";
             // 
             // StatusLabel
             // 
@@ -148,7 +149,7 @@
             // DeviceList
             // 
             this.DeviceList.FormattingEnabled = true;
-            this.DeviceList.Location = new System.Drawing.Point(12, 290);
+            this.DeviceList.Location = new System.Drawing.Point(12, 294);
             this.DeviceList.Name = "DeviceList";
             this.DeviceList.Size = new System.Drawing.Size(476, 21);
             this.DeviceList.TabIndex = 9;
@@ -172,9 +173,9 @@
             this.groupBox1.Controls.Add(this.IngeniouXToggle);
             this.groupBox1.Controls.Add(this.AuroraToggle);
             this.groupBox1.Controls.Add(this.FSDToggle);
-            this.groupBox1.Location = new System.Drawing.Point(12, 164);
+            this.groupBox1.Location = new System.Drawing.Point(15, 138);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(177, 113);
+            this.groupBox1.Size = new System.Drawing.Size(177, 123);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dashboards / Launchers";
@@ -259,9 +260,9 @@
             this.groupBox2.Controls.Add(this.FFPlayToggle);
             this.groupBox2.Controls.Add(this.GODUnlockerToggle);
             this.groupBox2.Controls.Add(this.XM360Toggle);
-            this.groupBox2.Location = new System.Drawing.Point(204, 164);
+            this.groupBox2.Location = new System.Drawing.Point(207, 138);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 110);
+            this.groupBox2.Size = new System.Drawing.Size(200, 120);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Homebrew";
@@ -344,7 +345,7 @@
             this.BadStickIcon.InitialImage = ((System.Drawing.Image)(resources.GetObject("BadStickIcon.InitialImage")));
             this.BadStickIcon.Location = new System.Drawing.Point(355, 9);
             this.BadStickIcon.Name = "BadStickIcon";
-            this.BadStickIcon.Size = new System.Drawing.Size(252, 134);
+            this.BadStickIcon.Size = new System.Drawing.Size(241, 121);
             this.BadStickIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BadStickIcon.TabIndex = 13;
             this.BadStickIcon.TabStop = false;
@@ -386,9 +387,9 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.PluginsToggle);
-            this.groupBox3.Location = new System.Drawing.Point(418, 164);
+            this.groupBox3.Location = new System.Drawing.Point(421, 138);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(90, 110);
+            this.groupBox3.Size = new System.Drawing.Size(90, 120);
             this.groupBox3.TabIndex = 16;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Plugins / Other";
@@ -397,18 +398,30 @@
             // 
             this.groupBox4.Controls.Add(this.ExitToggle);
             this.groupBox4.Controls.Add(this.SelectAllToggle);
-            this.groupBox4.Location = new System.Drawing.Point(523, 164);
+            this.groupBox4.Location = new System.Drawing.Point(526, 138);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(84, 110);
+            this.groupBox4.Size = new System.Drawing.Size(84, 120);
             this.groupBox4.TabIndex = 17;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Settings";
+            // 
+            // RefDrivesBtn
+            // 
+            this.RefDrivesBtn.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RefDrivesBtn.Location = new System.Drawing.Point(494, 293);
+            this.RefDrivesBtn.Name = "RefDrivesBtn";
+            this.RefDrivesBtn.Size = new System.Drawing.Size(116, 24);
+            this.RefDrivesBtn.TabIndex = 18;
+            this.RefDrivesBtn.Text = "Refresh Drives";
+            this.RefDrivesBtn.UseVisualStyleBackColor = true;
+            this.RefDrivesBtn.Click += new System.EventHandler(this.RefDrivesBtn_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(619, 371);
+            this.Controls.Add(this.RefDrivesBtn);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.BadStickIcon);
@@ -475,5 +488,6 @@
         private System.Windows.Forms.CheckBox PluginsToggle;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button RefDrivesBtn;
     }
 }

@@ -9,6 +9,7 @@ using System.IO.Compression;
 using System.Linq;
 using System.Management;
 using System.Net.Http;
+using System.Security.Principal;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -24,7 +25,7 @@ namespace Xbox_360_BadUpdate_USB_Tool
         public string DevicePath = "";
         private int _totalSteps;
         private int _currentStep;
-        private Dictionary<string, CheckBox> _checkBoxDict;
+        private Dictionary<string, CheckBox> _checkBoxDict; 
 
         public Form2()
         {
@@ -348,12 +349,12 @@ namespace Xbox_360_BadUpdate_USB_Tool
                     }
                 }
 
-                MessageBox.Show("Drive not found or inaccessible for formatting.", "Format Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Drive not found or inaccessible for formatting.", "BadStick Format Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error formatting drive: {ex.Message}", "Format Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error formatting drive: {ex.Message}", "BadStick Format Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
         }
@@ -362,7 +363,7 @@ namespace Xbox_360_BadUpdate_USB_Tool
         {
             if (DeviceList.SelectedItem == null)
             {
-                MessageBox.Show("Please select a USB device.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please select a USB device.", "Badstick Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -370,7 +371,7 @@ namespace Xbox_360_BadUpdate_USB_Tool
 
             if (string.IsNullOrEmpty(usbPath) || !Directory.Exists(usbPath))
             {
-                MessageBox.Show("Please select a valid USB device.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please select a valid USB device.", "BadStick Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -428,6 +429,10 @@ namespace Xbox_360_BadUpdate_USB_Tool
 
             UpdateStatus("Status: Done! USB Ready.");
             ProgressBar.Value = 100;
+            MessageBox.Show("Your USB is ready!\n\nYou are now free to SAFELY eject your USB and insert into your" +
+                "Xbox 360 Console, and copy all of the downloaded extras onto your hard drive via XeXMenu. Do" +
+                "not however, copy Rock Band Blitz or the BadUpdate payload to your consoles hard drive, those" +
+                "need to remain on your USB stick for the BadUpdate exploit to function properly.", "BadStick", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Thread.Sleep(500);
             await CountdownExitStatusAsync();
         }
@@ -445,6 +450,11 @@ namespace Xbox_360_BadUpdate_USB_Tool
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void RefDrivesBtn_Click(object sender, EventArgs e)
+        {
+            LoadUsbDrives();
         }
     }
 }

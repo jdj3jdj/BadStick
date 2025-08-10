@@ -1,11 +1,11 @@
-C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\bin\Debug\Xbox 360 BadUpdate USB Tool.exe.config
-C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\bin\Debug\Xbox 360 BadUpdate USB Tool.exe
-C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\bin\Debug\Xbox 360 BadUpdate USB Tool.pdb
 C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\obj\Debug\Xbox 360 BadUpdate USB Tool.csproj.AssemblyReference.cache
 C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\obj\Debug\Xbox_360_BadUpdate_USB_Tool.Form1.resources
 C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\obj\Debug\Xbox_360_BadUpdate_USB_Tool.Form2.resources
-C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\obj\Debug\Xbox_360_BadUpdate_USB_Tool.Properties.Resources.resources
 C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\obj\Debug\Xbox 360 BadUpdate USB Tool.csproj.GenerateResource.cache
 C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\obj\Debug\Xbox 360 BadUpdate USB Tool.csproj.CoreCompileInputs.cache
-C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\obj\Debug\Xbox 360 BadUpdate USB Tool.exe
-C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\obj\Debug\Xbox 360 BadUpdate USB Tool.pdb
+C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\bin\Debug\BadStick.exe.config
+C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\bin\Debug\BadStick.exe
+C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\bin\Debug\BadStick.pdb
+C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\obj\Debug\Xbox_360_BadStick.Properties.Resources.resources
+C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\obj\Debug\BadStick.exe
+C:\Users\19189\Desktop\Project Revive\Xbox 360 BadUpdate USB Tool\Xbox 360 BadUpdate USB Tool\obj\Debug\BadStick.pdb

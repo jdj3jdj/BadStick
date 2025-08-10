@@ -107,7 +107,7 @@
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(199, 17);
-            this.toolStripStatusLabel1.Text = "BadStick V1.0B Created By Shelby <3";
+            this.toolStripStatusLabel1.Text = "BadStick V1.2B Created By Shelby <3";
             // 
             // label3
             // 
@@ -137,6 +137,7 @@
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "BadStick";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
