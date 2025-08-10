@@ -25,11 +25,6 @@
 - **Open Source for Transparency and Learning:**  
   - Full source code provided, encouraging users and developers to understand and learn from the tool
 
-- **Safe & Reversible Soft Mod:**  
-  - Utilizes the BadUpdate exploit, a soft mod method that does **not** permanently modify the Xbox 360 firmware or hardware  
-  - When the console is rebooted or powered off, the exploit must be run again — ensuring no permanent changes or risk to warranty (aside from violating TOS)  
-  - Perfect for users who want to experiment with homebrew without the risks of hard modding  
-
 ## About the BadUpdate Exploit
 
 - A *soft mod* for Xbox 360 consoles using the Rock Band Blitz game update mechanism  
