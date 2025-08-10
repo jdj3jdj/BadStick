@@ -104,6 +104,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BadStick Icon.ico" />
+    <None Include="Resources\bugif.gif" />
+    <None Include="Resources\Xbox_logo.png" />
+    <None Include="Resources\xm360.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

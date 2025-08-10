@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Xbox_360_BadUpdate_USB_Tool
 {
+
     public partial class Form1 : Form
     {
-        public string currentver = "V1.2B";
         private bool IsRunAsAdmin()
         {
             using (var identity = WindowsIdentity.GetCurrent())
@@ -20,6 +20,8 @@ namespace Xbox_360_BadUpdate_USB_Tool
                 return principal.IsInRole(WindowsBuiltInRole.Administrator);
             }
         }
+
+        public static string currentver = "V1.0-Stable";
 
         public static async Task<bool> IsInternetAvailableAsync()
         {
@@ -37,6 +39,32 @@ namespace Xbox_360_BadUpdate_USB_Tool
             catch
             {
                 return false;
+            }
+        }
+
+        private async Task ComMSG()
+        {
+            try
+            {
+                using (var http = new HttpClient())
+                {
+                    http.Timeout = TimeSpan.FromSeconds(5);
+                    http.DefaultRequestHeaders.UserAgent.ParseAdd("BadStick-Updater/1.0");
+                    string state = await http.GetStringAsync("https://pastebin.com/raw/Wgp0YKMT");
+                    state = state.Trim().ToLowerInvariant();
+
+                    if (state == "true")
+                    {
+                        string messageText = await http.GetStringAsync("https://pastebin.com/raw/EqKcnG5t");
+                        messageText = messageText.Trim();
+
+                        MessageBox.Show(messageText, "Community Notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error retrieving message from server:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -84,6 +112,8 @@ namespace Xbox_360_BadUpdate_USB_Tool
         public Form1()
         {
             InitializeComponent();
+            shelbylabel1.Text = "BadStick " + Form1.currentver + " Created By Shelby <3";
+            _ = ComMSG();
         }
 
         private void CreditsBtn_Click(object sender, EventArgs e)
@@ -152,6 +182,11 @@ namespace Xbox_360_BadUpdate_USB_Tool
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void discordLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://discord.gg/xMbKazpkvf");
         }
     }
 }
