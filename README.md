@@ -6,17 +6,14 @@
 
 - A user-friendly, all-in-one USB setup tool for the Xbox 360 BadUpdate soft mod exploit  
 - Designed to format and prepare any FAT32-compatible USB stick specifically for the BadUpdate exploit  
-- Makes the complex process of preparing a USB drive for Xbox 360 soft modding *simple* and *accessible* to everyone  
-- Completely open source — intended for learning and customization, **not** for code theft or unauthorized redistribution  
+- Makes the complex process of preparing a USB drive for BadUpdate exploit simple
+- Completely open source
 
 ## Key Features
 
 - **Automated USB Formatting:**  
   - Automatically formats the USB stick to FAT32 with the correct partition and file system settings required by the Xbox 360  
-  - Includes progress updates and status messages to keep the user informed during the formatting process  
-
-- **One-Click Setup:**  
-  - Designed for ease of use — users simply click a button and BadStick does the rest, eliminating manual file copying or command line work  
+  - Includes progress updates and status messages to keep the user informed during the formatting process    
 
 - **BadUpdate Payload Installation:**  
   - Installs the official free trial version of *Rock Band Blitz* — a key component needed to trigger the BadUpdate exploit  
@@ -28,7 +25,6 @@
 
 - **Open Source for Transparency and Learning:**  
   - Full source code provided, encouraging users and developers to understand, modify, and improve the tool  
-  - Clear code comments and modular design make it easy to study the process behind Xbox 360 soft modding USB setup  
 
 - **Safe & Reversible Soft Mod:**  
   - Utilizes the BadUpdate exploit, a soft mod method that does **not** permanently modify the Xbox 360 firmware or hardware  
@@ -49,8 +45,7 @@
 
 - Removes all guesswork and manual setup steps from the BadUpdate exploit USB creation process  
 - Supports users of all experience levels — from first-timers to advanced modders who want a reliable USB setup tool  
-- Saves time by bundling formatting, payload installation, and homebrew setup into one easy application  
-- Encourages community development and learning with its open source approach
+- Saves time by bundling formatting, payload installation, and homebrew setup into one easy application
 
   ## Other Information
   BadStick was made to be a free and open source tool, not only to make it easier for people to get BadUpdate running on
